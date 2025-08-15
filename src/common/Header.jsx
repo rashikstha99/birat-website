@@ -6,7 +6,7 @@ import Logo from '../../public/logo.png'
 export const Header = () => {
   return (
     <div className='bg-text-light shadow1'>
-        <nav className="container py-2 flex items-center gap-50">
+        <nav className="container py-2 flex justify-center items-center gap-50">
             <Image
                 className='h-[75px] w-auto'
                 src={Logo}
@@ -15,7 +15,7 @@ export const Header = () => {
                 alt='Logo'
                 priority
             />
-            <div className="flex justify-between w-full">
+            <div className="hidden lg:flex justify-between w-full">
                 <Link href={'#'}>
                     <p className='text-primary hover:text-secondary'>Home</p>
                 </Link>

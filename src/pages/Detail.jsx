@@ -6,12 +6,12 @@ import { Calendar } from 'lucide-react'
 
 const Detail = () => {
   return (
-    <div className='container py-12 flex items-start'>
-        <div className="w-2/12 flex items-center gap-2 text-text-dark pt-4">
+    <div className='container py-12 flex flex-col md:flex-row items-start gap-2 md:gap-0'>
+        <div className="w-full lg:w-2/12 flex items-center gap-2 text-text-dark pt-0 lg:pt-4">
             <Calendar className="size-6 text-secondary" />
             <p>Aug 13, 2025</p>
         </div>
-        <div className="w-10/12">
+        <div className="w-full lg:w-10/12">
             <h1 className='mb-4 text-primary text-center capitalize'>Scan for assistance</h1>
             <Image
                 className='h-[550px] w-auto object-contain m-auto pb-4'
